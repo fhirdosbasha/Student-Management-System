@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Search Result</title>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<th>KodId</th>
+				<th>Name</th>
+				<th>Branch</th>
+			</tr>
+			<tr th:each="s : ${student}">
+				
+				<td th:text="${s.kodId}"></td>
+				<td th:text="${s.name}"></td>
+				<td th:text="${s.branch}"></td>
+				
+			</tr>
+		</table>
+	</body>
+</html>
